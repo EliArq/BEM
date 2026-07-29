@@ -30,7 +30,7 @@ Functions have Spanish comments, but feel free to translate it is nedeed :)
   The 2D implementation has known discrepancies and is still under review.
 
 
-**## Repository structure**
+## Repository structure
 
 
 
