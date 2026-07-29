@@ -241,7 +241,7 @@ switch graf
                     elementos_por_lambda_deseado = 6;
                     dim_el_i = lambda_i / elementos_por_lambda_deseado;
                     % Recalcular la malla para ESTA frecuencia
-                    [x0_i,x1_i,y0_i,y1_i,xm_i,ym_i,V_i] = Funcion_discretizar(bx,by,velocs,dim_el_i);
+                    [x0_i,x1_i,y0_i,y1_i,xm_i,ym_i,V_i] = discretizar(bx,by,velocs,dim_el_i);
                     dS_i = sqrt((x1_i-x0_i).^2 + (y1_i-y0_i).^2);
                     Ki_damped = Ki * (1 - 1i*eta);
                     [X_i, ~, ~] = EcuacionesFronteraBEM_KANSA(xm_i, ym_i, x0_i, y0_i, x1_i, y1_i, Ki_damped, V_i, rho, omegai, interior, numero, freqi);

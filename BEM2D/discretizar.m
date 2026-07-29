@@ -1,8 +1,8 @@
+function [x0,x1,y0,y1,xm,ym,V]=discretizar(bx,by,velocs,dim_el)
 %Script donde se discretiza la geometría anterior
 %se cogen dos puntos consecutivos y se construye un array de N puntos
 %equiespaciados, con dimensiones de mínimo 4 elementos
 %se obtiene la velocidad en toda la geometría
-function [x0,x1,y0,y1,xm,ym,V]=discretizar(bx,by,velocs,dim_el)
 nb=numel(bx)-1;
 ni=0;
 for ii=1:nb
