@@ -32,21 +32,17 @@ Este proyecto forma parte de mi Trabajo de Fin de Grado en Física (Universidad 
 
 
 
-```
-
 BEM/
 
-├── BEM\_2D/       # Solver 2D (función de Green de Hankel)
+├── BEM\_2D/       # Solver 2D 
 
-├── BEM\_3D/       # Solver 3D (función de Green exponencial)
+├── BEM\_3D/       # Solver 3D 
 
 ├── examples/     # Resultados de ejemplo (imágenes)
 
 ├── LICENSE
 
 └── README.md
-
-```
 
 
 
