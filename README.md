@@ -1,44 +1,44 @@
-**# BEM — Simulación de radiación acústica mediante el Método de los Elementos de Contorno**
+**# BEM — Simulation of acoustic radiation using the Boundary Element Method**
 
 
 
-Implementación en MATLAB de un entorno de simulación basado en el \*\*Método de los Elementos de Contorno (BEM)\*\* para el estudio de la \*\*respuesta en frecuencia\*\* y la \*\*directividad\*\* de sistemas radiantes (altavoces, pistones, arrays), en 2D y 3D.
+Implementation in MATLAB of a simulation environment based on the \*\*Boundary Element Method (BEM)\*\* for the study of the \*\*frequency response\*\* and \*\*directivity\*\* of radiating systems (loudspeakers, pistons, arrays), in 2D and 3D.
 
 
 
-Este proyecto forma parte de mi Trabajo de Fin de Grado en Física (Universidad de Alicante), supervisado por Jaime Ramis Soriano.
+This project forms part of my Final Year Project in Physics (University of Alicante), supervised by Jaime Ramis Soriano.
 
 
 
-**## ¿Qué hace?**
+**## What does it do?**
 
 
 
-\- Resuelve el campo de presión acústica radiado por superficies vibrantes usando BEM
+\- Solves the acoustic pressure field radiated by vibrating surfaces using BEM
 
-\- Calcula la \*\*directividad\*\* en planos horizontal y vertical
+\- Calculates \*\*directivity\*\* in the horizontal and vertical planes
 
-\- Calcula la \*\*respuesta en frecuencia\*\* en puntos de campo lejano
+\- Calculates the \*\*frequency response\*\* at far-field points
 
-\- Incluye solvers independientes para geometrías 2D (Green de Hankel) y 3D (Green exponencial)
+\- Includes separate solvers for 2D (Hankel’s Green’s formula) and 3D (exponential Green’s formula) geometries
 
-\- Gestiona frecuencias irregulares mediante el método CHIEF
+\- Handles irregular frequencies using the CHIEF method
 
-\- Permite refinamiento de malla adaptativo por frecuencia
+\- Allows for frequency-adaptive mesh refinement
 
 
 
-**## Estructura del repositorio**
+**## Repository structure**
 
 
 
 BEM/
 
-├── BEM\_2D/       # Solver 2D 
+├── BEM\_2D/       # 2D solver
 
-├── BEM\_3D/       # Solver 3D 
+├── BEM\_3D/       # 3D solver
 
-├── examples/     # Resultados de ejemplo (imágenes)
+├── examples/     # Example results (images)
 
 ├── LICENSE
 
@@ -46,36 +46,35 @@ BEM/
 
 
 
-**## Requisitos**
+**## Requirements**
 
 
 
-\- MATLAB (probado en versión R2025b)
+\- MATLAB (tested on version R2025b)
 
-\- No requiere toolboxes adicionales 
-
-
-
-**## Diagrama de flujo**
-
-![Diagrama de flujo](diagrama_bem.png)
+\- No additional toolboxes required
 
 
 
+**## Flowchart**
 
-**## Licencia**
-
-
-
-Este proyecto está licenciado bajo \*\*PolyForm Noncommercial License 1.0.0\*\*. Esto significa que puedes usar, estudiar y modificar el código libremente para fines no comerciales (estudio, investigación, portfolio), pero no está permitido su uso con fines comerciales sin autorización. Consulta el archivo \[LICENSE](LICENSE) para más detalles.
+![Flowchart](diagrama_bem.png)
 
 
 
-**## Autora**
+**## Licence**
 
 
 
-\*\*Eliana Arques\*\* — Graduada en Física (Universidad de Alicante)
+This project is licensed under the \*\*PolyForm Noncommercial Licence 1.0.0\*\*. This means that you are free to use, study and modify the code for non-commercial purposes (study, research, portfolio), but its use for commercial purposes is not permitted without authorisation. Please refer to the \[LICENSE](LICENSE) file for further details.
+
+
+
+**## Author**
+
+
+
+\*\*Eliana Arques\*\* — Graduate in Physics (University of Alicante)
 
 \[GitHub](https://github.com/EliArq) · \[LinkedIn](https://linkedin.com/in/eliana-arques)
 
