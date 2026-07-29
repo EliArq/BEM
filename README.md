@@ -60,19 +60,10 @@ BEM/
 
 
 
-**## Uso**
+**## Diagrama de flujo**
 
+![Diagrama de flujo](diagrama_bem.png)
 
-
-```matlab
-
-% Ejemplo básico de uso
-
-% (edita con el nombre real de tu script principal)
-
-run('BEM\_2D/main.m')
-
-```
 
 
 
