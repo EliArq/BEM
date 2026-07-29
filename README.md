@@ -1,34 +1,36 @@
-**# BEM — Simulation of acoustic radiation using the Boundary Element Method**
+# BEM — Simulation of acoustic radiation using the Boundary Element Method
 
 
 
-Implementation in MATLAB of a simulation environment based on the \*\*Boundary Element Method (BEM)\*\* for the study of the \*\*frequency response\*\* and \*\*directivity\*\* of radiating systems (loudspeakers, pistons, arrays), in 2D and 3D.
+Implementation in MATLAB of a simulation environment based on the Boundary Element Method (BEM) for the study of the frequency response and directivity of radiating systems (loudspeakers, pistons, arrays), in 2D and 3D.
 
 
+This project forms part of my Final Year Project in Physics (University of Alicante), supervised by Jaime Ramis Soriano. The full written report is in Spanish.
+Functions have Spanish comments, but feel free to translate it is nedeed :)
 
-This project forms part of my Final Year Project in Physics (University of Alicante), supervised by Jaime Ramis Soriano.
 
-
-
-**## What does it do?**
+## What does it do?
 
 
 
 \- Solves the acoustic pressure field radiated by vibrating surfaces using BEM
 
-\- Calculates \*\*directivity\*\* in the horizontal and vertical planes
+\- Calculates directivity in the horizontal and vertical planes
 
-\- Calculates the \*\*frequency response\*\* at far-field points
+\- Calculates the frequency response at far-field points
 
-\- Includes separate solvers for 2D (Hankel’s Green’s formula) and 3D (exponential Green’s formula) geometries
+\- Includes separate solvers for 2D (Hankel based Green’s function) and 3D (exponential Green’s function) geometries
 
 \- Handles irregular frequencies using the CHIEF method
 
 \- Allows for frequency-adaptive mesh refinement
 
+## Known limitations
+- Radiation impedance calculation is validated in 3D. 
+  The 2D implementation has known discrepancies and is still under review.
 
 
-**## Repository structure**
+## Repository structure
 
 
 
@@ -46,7 +48,7 @@ BEM/
 
 
 
-**## Requirements**
+## Requirements
 
 
 
@@ -56,13 +58,13 @@ BEM/
 
 
 
-**## Flowchart**
+## Flowchart
 
 ![Flowchart](diagrama_bem.png)
 
 
 
-**## Licence**
+## Licence
 
 
 
@@ -70,11 +72,11 @@ This project is licensed under the \*\*PolyForm Noncommercial Licence 1.0.0\*\*.
 
 
 
-**## Author**
+## Author
 
 
 
-\*\*Eliana Arques\*\* — Graduate in Physics (University of Alicante)
+Eliana Arques — Graduate in Physics (University of Alicante)
 
 \[GitHub](https://github.com/EliArq) · \[LinkedIn](https://linkedin.com/in/eliana-arques)
 

@@ -1,8 +1,8 @@
-**# BEM — Simulación de radiación acústica mediante el Método de los Elementos de Contorno**
+# BEM — Simulación de radiación acústica mediante el Método de los Elementos de Contorno
 
 
 
-Implementación en MATLAB de un entorno de simulación basado en el \*\*Método de los Elementos de Contorno (BEM)\*\* para el estudio de la \*\*respuesta en frecuencia\*\* y la \*\*directividad\*\* de sistemas radiantes (altavoces, pistones, arrays), en 2D y 3D.
+Implementación en MATLAB de un entorno de simulación basado en el Método de los Elementos de Contorno (BEM) para el estudio de la respuesta en frecuencia y la directividad de sistemas radiantes (altavoces, pistones, arrays), en 2D y 3D.
 
 
 
@@ -10,15 +10,15 @@ Este proyecto forma parte de mi Trabajo de Fin de Grado en Física (Universidad 
 
 
 
-**## ¿Qué hace?**
+## ¿Qué hace?
 
 
 
 \- Resuelve el campo de presión acústica radiado por superficies vibrantes usando BEM
 
-\- Calcula la \*\*directividad\*\* en planos horizontal y vertical
+\- Calcula la directividad en planos horizontal y vertical
 
-\- Calcula la \*\*respuesta en frecuencia\*\* en puntos de campo lejano
+\- Calcula la respuesta en frecuencia en puntos de campo lejano
 
 \- Incluye solvers independientes para geometrías 2D (Green de Hankel) y 3D (Green exponencial)
 
@@ -26,9 +26,13 @@ Este proyecto forma parte de mi Trabajo de Fin de Grado en Física (Universidad 
 
 \- Permite refinamiento de malla adaptativo por frecuencia
 
+## Limitaciones
+
+La impedancia de radiación se comprobó para el caso 3D de la caja cerrada.
+En el caso 2D, la impedancia de radiación muestra discrepancias y se está revisando. 
 
 
-**## Estructura del repositorio**
+## Estructura del repositorio
 
 
 
@@ -46,7 +50,7 @@ BEM/
 
 
 
-**## Requisitos**
+## Requisitos
 
 
 
@@ -56,14 +60,14 @@ BEM/
 
 
 
-**## Diagrama de flujo**
+## Diagrama de flujo
 
 ![Diagrama de flujo](diagrama_bem.png)
 
 
 
 
-**## Licencia**
+## Licencia
 
 
 
@@ -71,11 +75,11 @@ Este proyecto está licenciado bajo \*\*PolyForm Noncommercial License 1.0.0\*\*
 
 
 
-**## Autora**
+## Autora
 
 
 
-\*\*Eliana Arques\*\* — Graduada en Física (Universidad de Alicante)
+Eliana Arques — Graduada en Física (Universidad de Alicante)
 
 \[GitHub](https://github.com/EliArq) · \[LinkedIn](https://linkedin.com/in/eliana-arques)
 
