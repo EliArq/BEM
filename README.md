@@ -1,4 +1,4 @@
-**# BEM — Simulation of acoustic radiation using the Boundary Element Method**
+# BEM — Simulation of acoustic radiation using the Boundary Element Method
 
 
 
@@ -9,7 +9,7 @@ This project forms part of my Final Year Project in Physics (University of Alica
 Functions have Spanish comments, but feel free to translate it is nedeed :)
 
 
-**## What does it do?**
+## What does it do?
 
 
 
@@ -48,7 +48,7 @@ BEM/
 
 
 
-**## Requirements**
+## Requirements
 
 
 
@@ -58,13 +58,13 @@ BEM/
 
 
 
-**## Flowchart**
+## Flowchart
 
 ![Flowchart](diagrama_bem.png)
 
 
 
-**## Licence**
+## Licence
 
 
 
@@ -72,7 +72,7 @@ This project is licensed under the \*\*PolyForm Noncommercial Licence 1.0.0\*\*.
 
 
 
-**## Author**
+## Author
 
 
 
