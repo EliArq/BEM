@@ -25,6 +25,9 @@ Functions have Spanish comments, but feel free to translate it is nedeed :)
 
 \- Allows for frequency-adaptive mesh refinement
 
+## Known limitations
+- Radiation impedance calculation is validated in 3D. 
+  The 2D implementation has known discrepancies and is still under review.
 
 
 **## Repository structure**
