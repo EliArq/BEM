@@ -1,0 +1,31 @@
+%como se necesita resolver la integral de G o de su derivada respecto al  
+%vector normal, es necesario el uso de métodos numéricos, donde 
+%se obtienen los factores peso con la cuadratura de Gauss-Legendre (0,1)
+%para obtener G y H para fuera de la diagonal, cuando se cumple la condición
+%de k != m
+
+function [G,H]=integoff(x0,y0,x1,y1,x2,y2,K,npoints)
+
+% Número de puntos de base (abscisas) (integra un polinomio de orden (2n-1) exactamente)
+[puntos_base,factores_peso]=qrule(npoints,1,0,0);
+
+G = 0;H=0;
+for ii=1:npoints
+    xi=puntos_base(ii).*(x2-x1)/2+(x2+x1)/2;
+    yi=puntos_base(ii).*(y2-y1)/2+(y2+y1)/2;
+    ri=sqrt((xi-x0).^2+(yi-y0).^2);
+    L=sqrt((x2-x1).^2+(y2-y1).^2);
+    theta=atan2(x1-x2,y2-y1);    %  Angulo normal
+    c=cos(theta);
+    s=sin(theta);
+    drdni=(xi-x0)./ri.*c+(yi-y0)./ri.*s;
+    
+    gi=-1i/4.*besselh(0,2,K.*ri).*L./2.*factores_peso(ii);
+    %hi es la derivada 
+    hi=1i*K/4.*besselh(1,2,K.*ri).*L./2.*drdni.*factores_peso(ii);
+    G=G+(gi);
+    H=H+(hi);
+    
+    
+end
+return;
